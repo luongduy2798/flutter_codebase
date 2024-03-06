@@ -1,0 +1,55 @@
+name: turtle
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  flutter_bloc: ^8.1.4
+  flutter_easyloading:
+    path: packages/flutter_easyloading-3.0.5
+  equatable: ^2.0.5
+  shared_preferences: ^2.2.2
+  cached_network_image: ^3.3.1
+  dio: ^5.4.1
+  # firebase_core: ^2.26.0
+  # firebase_messaging: ^14.7.18
+  # flutter_local_notifications: ^16.3.3
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.8
+  flutter_gen_runner: ^5.4.0
+
+flutter_gen:
+  colors:
+    inputs:
+      - assets/colors.xml
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+
+  fonts:
+    - family: NotoSansKR
+      fonts:
+        - asset: assets/fonts/NotoSansKR-Bold.otf
+          weight: 700
+        - asset: assets/fonts/NotoSansKR-Bold.otf
+          weight: 600
+        - asset: assets/fonts/NotoSansKR-Medium.otf
+          weight: 500
+        - asset: assets/fonts/NotoSansKR-Regular.otf
+          weight: 400
+
