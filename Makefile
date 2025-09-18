@@ -43,3 +43,15 @@ sha:
 
 release-web:
 	flutter build web
+
+precache-android:
+	rm -rf bin/cache/artifacts/engine/android*
+	fvm flutter precache --android	
+
+precache-ios:
+	rm -rf bin/cache/artifacts/engine/ios*
+	flutter precache --ios
+
+precache-macos:
+	rm -rf bin/cache/artifacts/engine/darwin*
+	fvm flutter precache --macos
